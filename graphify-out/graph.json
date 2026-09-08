@@ -1,0 +1,2626 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "author_creation_request_flow",
+        "label": "Author creation request flow: Crear -> Ejecuta -> Manejador.Handle -> ContextoAutor -> AutorLibro",
+        "nodes": [
+          "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+          "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+          "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+          "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+          "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+          "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs"
+      },
+      {
+        "id": "mediatr_wiring_group",
+        "label": "MediatR DI wiring: Program.AddMediatR registers IMediator and IRequestHandler implementation Manejador",
+        "nodes": [
+          "tiendaservicio_api_autor_program",
+          "imediator",
+          "irequesthandler",
+          "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "TiendaServicio.Api.Autor/Program.cs"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "label": "ContextoAutorModelSnapshot",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s318"
+        ]
+      },
+      "norm_label": "contextoautormodelsnapshot",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L13"
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "label": "AutorLibro",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Modelo",
+        "scope_chain": [
+          "s3"
+        ]
+      },
+      "norm_label": "autorlibro",
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L3"
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "label": "GradoAcademico",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Modelo",
+        "scope_chain": [
+          "s48"
+        ]
+      },
+      "norm_label": "gradoacademico",
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "label": "ContextoAutor",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Persistencia",
+        "scope_chain": [
+          "s137"
+        ]
+      },
+      "norm_label": "contextoautor",
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "label": "Ejecuta",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": "ejecuta",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "label": "WeatherForecastController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Controllers",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "norm_label": "weatherforecastcontroller",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "tiendaservicio_api_autor_weatherforecast_tiendaservicio_api_autor_weatherforecast",
+      "label": "WeatherForecast",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "weatherforecast",
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L3"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "label": "MigracionIncial",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s367"
+        ]
+      },
+      "norm_label": "migracionincial",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L14"
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "label": "Manejador",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": "manejador",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L16"
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_nuevo",
+      "label": "Nuevo",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": "nuevo",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "label": "AutorController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Controllers",
+        "scope_chain": [
+          "s132"
+        ]
+      },
+      "norm_label": "autorcontroller",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L8"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_buildmodel",
+      "label": ".BuildModel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s318"
+        ]
+      },
+      "norm_label": ".buildmodel()",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L16"
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "label": ".Handle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": ".handle()",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23"
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "label": ".Crear()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Controllers",
+        "scope_chain": [
+          "s132"
+        ]
+      },
+      "norm_label": ".crear()",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18"
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller_get",
+      "label": ".Get()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Controllers",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "norm_label": ".get()",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L14"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial_buildtargetmodel",
+      "label": ".BuildTargetModel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s367"
+        ]
+      },
+      "norm_label": ".buildtargetmodel()",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L19"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_down",
+      "label": ".Down()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s145"
+        ]
+      },
+      "norm_label": ".down()",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L61"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_up",
+      "label": ".Up()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "TiendaServicio.Api.Autor.Migrations",
+        "scope_chain": [
+          "s145"
+        ]
+      },
+      "norm_label": ".up()",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L13"
+    },
+    {
+      "id": "csharp_namespace:562d992270b52d3e",
+      "label": "TiendaServicio.Api.Autor.Modelo",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor.Modelo"
+      },
+      "norm_label": "tiendaservicio.api.autor.modelo",
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L1",
+      "type": "namespace"
+    },
+    {
+      "id": "dbcontext",
+      "label": "DbContext",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "dbcontext",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "dbset",
+      "label": "DbSet",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "dbset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "icollection",
+      "label": "ICollection",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "icollection",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "modelsnapshot",
+      "label": "ModelSnapshot",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "modelsnapshot",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_cs_modelbuilder",
+      "label": "ModelBuilder",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "modelbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_autorlibro",
+      "label": "AutorLibro.cs",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "autorlibro.cs",
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_autorlibro_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_gradoacademico",
+      "label": "GradoAcademico.cs",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "gradoacademico.cs",
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_modelo_gradoacademico_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_persistencia_contextoautor",
+      "label": "ContextoAutor.cs",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Domain Model & DbContext",
+      "file_type": "code",
+      "norm_label": "contextoautor.cs",
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "actionresult",
+      "label": "ActionResult",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "actionresult",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "ejecuta",
+      "label": "Ejecuta",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "ejecuta",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "httppost",
+      "label": "HttpPost",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "httppost",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "irequest",
+      "label": "IRequest",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "irequest",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "irequesthandler",
+      "label": "IRequestHandler",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "irequesthandler",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo_cs_unit",
+      "label": "Unit",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "unit",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_autorcontroller_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_autorcontroller_cs_unit",
+      "label": "Unit",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "MediatR Request & Handler Contract",
+      "file_type": "code",
+      "norm_label": "unit",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_obj_debug_net10_0_tiendaservicio_api_autor_mvcapplicationpartsassemblyinfo",
+      "label": "TiendaServicio.Api.Autor.MvcApplicationPartsAssemblyInfo.cs",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "MVC Application Parts",
+      "file_type": "code",
+      "norm_label": "tiendaservicio.api.autor.mvcapplicationpartsassemblyinfo.cs",
+      "source_file": "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.MvcApplicationPartsAssemblyInfo.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "controllerbase",
+      "label": "ControllerBase",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "controllerbase",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "csharp_namespace:73075e300a118e26",
+      "label": "TiendaServicio.Api.Autor",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor"
+      },
+      "norm_label": "tiendaservicio.api.autor",
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L1",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:8118d2adb596b469",
+      "label": "TiendaServicio.Api.Autor.Controllers",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor.Controllers"
+      },
+      "norm_label": "tiendaservicio.api.autor.controllers",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L6",
+      "type": "namespace"
+    },
+    {
+      "id": "dateonly",
+      "label": "DateOnly",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "dateonly",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "httpget",
+      "label": "HttpGet",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "httpget",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "ienumerable",
+      "label": "IEnumerable",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "ienumerable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "string",
+      "label": "string",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "string",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "label": "WeatherForecastController.cs",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "weatherforecastcontroller.cs",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_weatherforecast",
+      "label": "WeatherForecast.cs",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "weatherforecast.cs",
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "weatherforecast",
+      "label": "WeatherForecast",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Web API & WeatherForecast Sample",
+      "file_type": "code",
+      "norm_label": "weatherforecast",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "csharp_namespace:0429dc633847885e",
+      "label": "TiendaServicio.Api.Autor.Persistencia",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor.Persistencia"
+      },
+      "norm_label": "tiendaservicio.api.autor.persistencia",
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L5",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:f1a9f2d6381659aa",
+      "label": "TiendaServicio.Api.Autor.Migrations",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor.Migrations"
+      },
+      "norm_label": "tiendaservicio.api.autor.migrations",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L12",
+      "type": "namespace"
+    },
+    {
+      "id": "migration",
+      "label": "Migration",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "migration",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "migrationbuilder",
+      "label": "MigrationBuilder",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "migrationbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "nuget_npgsql_entityframeworkcore_postgresql",
+      "label": "Npgsql.EntityFrameworkCore.PostgreSQL (10.0.3)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "npgsql.entityframeworkcore.postgresql (10.0.3)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial",
+      "label": "20260908165348_MigracionIncial.cs",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "20260908165348_migracionincial.cs",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer",
+      "label": "20260908165348_MigracionIncial.Designer.cs",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "20260908165348_migracionincial.designer.cs",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_cs_modelbuilder",
+      "label": "ModelBuilder",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "modelbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "label": "ContextoAutorModelSnapshot.cs",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "EF Core Migrations (Postgres)",
+      "file_type": "code",
+      "norm_label": "contextoautormodelsnapshot.cs",
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings",
+      "label": "launchSettings.json",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "launchsettings.json",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "label": "ASPNETCORE_ENVIRONMENT",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "aspnetcore_environment",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_http_applicationurl",
+      "label": "applicationUrl",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "applicationurl",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_http_commandname",
+      "label": "commandName",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "commandname",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_http_dotnetrunmessages",
+      "label": "dotnetRunMessages",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "dotnetrunmessages",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_http_environmentvariables",
+      "label": "environmentVariables",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "environmentvariables",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_http_launchbrowser",
+      "label": "launchBrowser",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "launchbrowser",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_profiles",
+      "label": "profiles",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "profiles",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "label": "http",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "http",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "tiendaservicio_api_autor_properties_launchsettings_schema",
+      "label": "$schema",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Launch Settings",
+      "file_type": "code",
+      "norm_label": "$schema",
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "nuget_mediatr_extensions_microsoft_dependencyinjection",
+      "label": "MediatR.Extensions.Microsoft.DependencyInjection (10.0.1)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "mediatr.extensions.microsoft.dependencyinjection (10.0.1)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "nuget_microsoft_aspnetcore_openapi",
+      "label": "Microsoft.AspNetCore.OpenApi (10.0.11)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "microsoft.aspnetcore.openapi (10.0.11)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "nuget_microsoft_entityframeworkcore",
+      "label": "Microsoft.EntityFrameworkCore (10.0.11)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "microsoft.entityframeworkcore (10.0.11)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "nuget_microsoft_entityframeworkcore_design",
+      "label": "Microsoft.EntityFrameworkCore.Design (10.0.11)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "microsoft.entityframeworkcore.design (10.0.11)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "nuget_microsoft_entityframeworkcore_tools",
+      "label": "Microsoft.EntityFrameworkCore.Tools (10.0.11)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "microsoft.entityframeworkcore.tools (10.0.11)",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "label": "TiendaServicio.Api.Autor",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "tiendaservicio.api.autor",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "tiendaservicios",
+      "label": "TiendaServicios.slnx",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "code",
+      "norm_label": "tiendaservicios.slnx",
+      "source_file": "TiendaServicios.slnx",
+      "source_location": null
+    },
+    {
+      "id": "framework_net10_0",
+      "label": "net10.0",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "concept",
+      "norm_label": "net10.0",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "sdk_microsoft_net_sdk_web",
+      "label": "Microsoft.NET.Sdk.Web",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "NuGet Package References",
+      "file_type": "concept",
+      "norm_label": "microsoft.net.sdk.web",
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "source_location": null
+    },
+    {
+      "id": "csharp_namespace:708474913ed5c750",
+      "label": "TiendaServicio.Api.Autor.Aplicacion",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "TiendaServicio.Api.Autor.Aplicacion"
+      },
+      "norm_label": "tiendaservicio.api.autor.aplicacion",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L5",
+      "type": "namespace"
+    },
+    {
+      "id": "imediator",
+      "label": "IMediator",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "norm_label": "imediator",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "tiendaservicio_api_autor_aplicacion_nuevo",
+      "label": "Nuevo.cs",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "norm_label": "nuevo.cs",
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_controllers_autorcontroller",
+      "label": "AutorController.cs",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "norm_label": "autorcontroller.cs",
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_program",
+      "label": "Program.cs",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Request Pipeline & Composition Root",
+      "file_type": "code",
+      "norm_label": "program.cs",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_obj_debug_net10_0_netcoreapp_version_v10_0_assemblyattributes",
+      "label": ".NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Assembly Attributes",
+      "file_type": "code",
+      "norm_label": ".netcoreapp,version=v10.0.assemblyattributes.cs",
+      "source_file": "TiendaServicio.Api.Autor/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_obj_debug_net10_0_tiendaservicio_api_autor_assemblyinfo",
+      "label": "TiendaServicio.Api.Autor.AssemblyInfo.cs",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Assembly Info",
+      "file_type": "code",
+      "norm_label": "tiendaservicio.api.autor.assemblyinfo.cs",
+      "source_file": "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.AssemblyInfo.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "tiendaservicio_api_autor_obj_debug_net10_0_tiendaservicio_api_autor_globalusings_g",
+      "label": "TiendaServicio.Api.Autor.GlobalUsings.g.cs",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Global Usings",
+      "file_type": "code",
+      "norm_label": "tiendaservicio.api.autor.globalusings.g.cs",
+      "source_file": "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.GlobalUsings.g.cs",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller_get",
+      "target": "httpget",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "httppost",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_weatherforecast_tiendaservicio_api_autor_weatherforecast",
+      "target": "dateonly",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateOnly"
+      },
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_cs_datetime",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_cs_datetime",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_cs_datetime",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "dbset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DbSet"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "target": "icollection",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ICollection"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "string",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "actionresult",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ActionResult"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "AutorLibro"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "GradoAcademico"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_cs_unit",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Unit"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_cs_unit",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Unit"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller_get",
+      "target": "weatherforecast",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "WeatherForecast"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "csharp_namespace:708474913ed5c750",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "csharp_namespace:708474913ed5c750",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Aplicacion",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "csharp_namespace:562d992270b52d3e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Modelo",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "csharp_namespace:562d992270b52d3e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Modelo",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "csharp_namespace:0429dc633847885e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Persistencia",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer",
+      "target": "csharp_namespace:0429dc633847885e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Persistencia",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "csharp_namespace:0429dc633847885e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Persistencia",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "csharp_namespace:0429dc633847885e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "TiendaServicio.Api.Autor.Persistencia",
+        "scope_kind": "file"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "ejecuta",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Ejecuta",
+        "qualified": true,
+        "ref_qualifier": "Nuevo"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "cancellationtoken",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "ejecuta",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Ejecuta"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_down",
+      "target": "migrationbuilder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_up",
+      "target": "migrationbuilder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial_buildtargetmodel",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_cs_modelbuilder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_buildmodel",
+      "target": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_cs_modelbuilder",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller_get",
+      "target": "ienumerable",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_cs_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_cs_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "controllerbase",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "ControllerBase"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "controllerbase",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "ControllerBase"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "dbcontext",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "DbContext"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "target": "irequest",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "IRequest"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "target": "irequesthandler",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "IRequestHandler"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "migration",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "Migration"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "modelsnapshot",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "ModelSnapshot"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "csharp_namespace:708474913ed5c750",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_nuevo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_nuevo",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "csharp_namespace:8118d2adb596b469",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "csharp_namespace:8118d2adb596b469",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial",
+      "target": "csharp_namespace:f1a9f2d6381659aa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer",
+      "target": "csharp_namespace:f1a9f2d6381659aa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "csharp_namespace:f1a9f2d6381659aa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_autorlibro",
+      "target": "csharp_namespace:562d992270b52d3e",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_autorlibro",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_gradoacademico",
+      "target": "csharp_namespace:562d992270b52d3e",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_gradoacademico",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "csharp_namespace:0429dc633847885e",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_schema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_profiles",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_http_environmentvariables",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_http_commandname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_http_dotnetrunmessages",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_http_launchbrowser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_http_applicationurl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_properties_launchsettings_profiles_http",
+      "target": "tiendaservicio_api_autor_properties_launchsettings_http_environmentvariables",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Properties/launchSettings.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_weatherforecast",
+      "target": "csharp_namespace:73075e300a118e26",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_weatherforecast",
+      "target": "tiendaservicio_api_autor_weatherforecast_tiendaservicio_api_autor_weatherforecast",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/WeatherForecast.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicios",
+      "target": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicios.slnx",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_mediatr_extensions_microsoft_dependencyinjection",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_microsoft_aspnetcore_openapi",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_microsoft_entityframeworkcore",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_microsoft_entityframeworkcore_design",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_microsoft_entityframeworkcore_tools",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "nuget_npgsql_entityframeworkcore_postgresql",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller_get",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial_buildtargetmodel",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_up",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_tiendaservicio_api_autor_migrations_migracionincial_down",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_buildmodel",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "framework_net10_0",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_tiendaservicio_api_autor",
+      "target": "sdk_microsoft_net_sdk_web",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj",
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "relation": "semantically_similar_to",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "GradoAcademico"
+      },
+      "source_file": "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "imediator",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "tiendaservicio_api_autor_weatherforecast_tiendaservicio_api_autor_weatherforecast",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "imediator",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "target": "irequesthandler",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "nuget_npgsql_entityframeworkcore_postgresql",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "target": "nuget_npgsql_entityframeworkcore_postgresql",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "imediator",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ejecuta",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_weatherforecastcontroller_tiendaservicio_api_autor_controllers_weatherforecastcontroller",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ejecuta",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "tiendaservicio_api_autor_modelo_gradoacademico_tiendaservicio_api_autor_modelo_gradoacademico",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "nuget_npgsql_entityframeworkcore_postgresql",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+      "target": "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tiendaservicio_api_autor_migrations_20260908165348_migracionincial_designer_tiendaservicio_api_autor_migrations_migracionincial",
+      "target": "tiendaservicio_api_autor_migrations_contextoautormodelsnapshot_tiendaservicio_api_autor_migrations_contextoautormodelsnapshot",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "author_creation_request_flow",
+      "label": "Author creation request flow: Crear -> Ejecuta -> Manejador.Handle -> ContextoAutor -> AutorLibro",
+      "nodes": [
+        "tiendaservicio_api_autor_controllers_autorcontroller_tiendaservicio_api_autor_controllers_autorcontroller_crear",
+        "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecuta",
+        "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+        "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador_handle",
+        "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+        "tiendaservicio_api_autor_modelo_autorlibro_tiendaservicio_api_autor_modelo_autorlibro"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Controllers/AutorController.cs"
+    },
+    {
+      "id": "mediatr_wiring_group",
+      "label": "MediatR DI wiring: Program.AddMediatR registers IMediator and IRequestHandler implementation Manejador",
+      "nodes": [
+        "tiendaservicio_api_autor_program",
+        "imediator",
+        "irequesthandler",
+        "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "TiendaServicio.Api.Autor/Program.cs"
+    }
+  ]
+}

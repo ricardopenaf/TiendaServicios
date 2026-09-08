@@ -1,0 +1,218 @@
+{
+  ".vs/TiendaServicios.slnx/v18/DocumentLayout.backup.json": {
+    "mtime": 1788904165.5509262,
+    "seen": 1788905148.3187099,
+    "ast_hash": "3ce15a4d28fbf91d596aee4e8215e1d1",
+    "semantic_hash": "3ce15a4d28fbf91d596aee4e8215e1d1"
+  },
+  ".vs/TiendaServicios.slnx/v18/DocumentLayout.json": {
+    "mtime": 1788904508.4144027,
+    "seen": 1788905148.3187187,
+    "ast_hash": "975e6b849f7306e080dee0dc51ac7a38",
+    "semantic_hash": "975e6b849f7306e080dee0dc51ac7a38"
+  },
+  "TiendaServicio.Api.Autor/Aplicacion/Nuevo.cs": {
+    "mtime": 1788904163.0402133,
+    "seen": 1788905148.3187218,
+    "ast_hash": "6c24b16d1116ad2fdc21c9817fd82094",
+    "semantic_hash": "6c24b16d1116ad2fdc21c9817fd82094"
+  },
+  "TiendaServicio.Api.Autor/Controllers/AutorController.cs": {
+    "mtime": 1788904147.8761947,
+    "seen": 1788905148.318724,
+    "ast_hash": "934389e9a9d40504d476d581ca330209",
+    "semantic_hash": "934389e9a9d40504d476d581ca330209"
+  },
+  "TiendaServicio.Api.Autor/Controllers/WeatherForecastController.cs": {
+    "mtime": 1788877494.0904446,
+    "seen": 1788905148.3187258,
+    "ast_hash": "38bcafcb42d2d10c174f057c29642019",
+    "semantic_hash": "38bcafcb42d2d10c174f057c29642019"
+  },
+  "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.Designer.cs": {
+    "mtime": 1788886428.7736182,
+    "seen": 1788905148.3187277,
+    "ast_hash": "ea67a182755485906443708d54ec55f0",
+    "semantic_hash": "ea67a182755485906443708d54ec55f0"
+  },
+  "TiendaServicio.Api.Autor/Migrations/20260908165348_MigracionIncial.cs": {
+    "mtime": 1788886428.7626238,
+    "seen": 1788905148.3187296,
+    "ast_hash": "718500a91bee2f4d8fd8135cacd7b750",
+    "semantic_hash": "718500a91bee2f4d8fd8135cacd7b750"
+  },
+  "TiendaServicio.Api.Autor/Migrations/ContextoAutorModelSnapshot.cs": {
+    "mtime": 1788886428.7854748,
+    "seen": 1788905148.3187318,
+    "ast_hash": "42d91e82fd688e8b480b8697a07cca75",
+    "semantic_hash": "42d91e82fd688e8b480b8697a07cca75"
+  },
+  "TiendaServicio.Api.Autor/Modelo/AutorLibro.cs": {
+    "mtime": 1788877990.5909052,
+    "seen": 1788905148.3187335,
+    "ast_hash": "3b1983706bacfa54bbae717b67b9261b",
+    "semantic_hash": "3b1983706bacfa54bbae717b67b9261b"
+  },
+  "TiendaServicio.Api.Autor/Modelo/GradoAcademico.cs": {
+    "mtime": 1788878009.787802,
+    "seen": 1788905148.3187351,
+    "ast_hash": "c6f728d4eebc485d78cc7366a215fa7c",
+    "semantic_hash": "c6f728d4eebc485d78cc7366a215fa7c"
+  },
+  "TiendaServicio.Api.Autor/Persistencia/ContextoAutor.cs": {
+    "mtime": 1788885531.5152607,
+    "seen": 1788905148.3187373,
+    "ast_hash": "ba336118d2cac73b6070c791614bf706",
+    "semantic_hash": "ba336118d2cac73b6070c791614bf706"
+  },
+  "TiendaServicio.Api.Autor/Program.cs": {
+    "mtime": 1788904844.3770118,
+    "seen": 1788905148.3187394,
+    "ast_hash": "75db96de3958944af1d61c70a60d5272",
+    "semantic_hash": "75db96de3958944af1d61c70a60d5272"
+  },
+  "TiendaServicio.Api.Autor/Properties/launchSettings.json": {
+    "mtime": 1788877490.4391546,
+    "seen": 1788905148.318741,
+    "ast_hash": "fa7158d4f65000d2f7425b897ae1361c",
+    "semantic_hash": "fa7158d4f65000d2f7425b897ae1361c"
+  },
+  "TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj": {
+    "mtime": 1788898895.0857177,
+    "seen": 1788905148.3187428,
+    "ast_hash": "c215ded3ba284fa09ce19d15bf6d014e",
+    "semantic_hash": "c215ded3ba284fa09ce19d15bf6d014e"
+  },
+  "TiendaServicio.Api.Autor/WeatherForecast.cs": {
+    "mtime": 1788877494.1913683,
+    "seen": 1788905148.3187444,
+    "ast_hash": "c15fc5acf3ac24f0d1333f18d970c689",
+    "semantic_hash": "c15fc5acf3ac24f0d1333f18d970c689"
+  },
+  "TiendaServicio.Api.Autor/appsettings.Development.json": {
+    "mtime": 1788877490.4622912,
+    "seen": 1788905148.3187466,
+    "ast_hash": "804b473502a4c415cf75db61c56c32aa",
+    "semantic_hash": "804b473502a4c415cf75db61c56c32aa"
+  },
+  "TiendaServicio.Api.Autor/appsettings.json": {
+    "mtime": 1788886060.3763547,
+    "seen": 1788905148.3187482,
+    "ast_hash": "564c9cca98075e94f36a07ef3d8ac0f2",
+    "semantic_hash": "564c9cca98075e94f36a07ef3d8ac0f2"
+  },
+  "TiendaServicio.Api.Autor/bin/Debug/net10.0/TiendaServicio.Api.Autor.deps.json": {
+    "mtime": 1788904170.8716657,
+    "seen": 1788905148.31875,
+    "ast_hash": "1dfe936df16ff069b429ebcb78e73650",
+    "semantic_hash": "1dfe936df16ff069b429ebcb78e73650"
+  },
+  "TiendaServicio.Api.Autor/bin/Debug/net10.0/TiendaServicio.Api.Autor.runtimeconfig.json": {
+    "mtime": 1788904170.9590344,
+    "seen": 1788905148.3187518,
+    "ast_hash": "37595336dae30b037bd95e5047b95825",
+    "semantic_hash": "37595336dae30b037bd95e5047b95825"
+  },
+  "TiendaServicio.Api.Autor/bin/Debug/net10.0/TiendaServicio.Api.Autor.staticwebassets.endpoints.json": {
+    "mtime": 1788886401.5571494,
+    "seen": 1788905148.3187537,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "TiendaServicio.Api.Autor/bin/Debug/net10.0/appsettings.Development.json": {
+    "mtime": 1788877490.4622912,
+    "seen": 1788905148.3187554,
+    "ast_hash": "804b473502a4c415cf75db61c56c32aa",
+    "semantic_hash": "804b473502a4c415cf75db61c56c32aa"
+  },
+  "TiendaServicio.Api.Autor/bin/Debug/net10.0/appsettings.json": {
+    "mtime": 1788886060.3763547,
+    "seen": 1788905148.318757,
+    "ast_hash": "564c9cca98075e94f36a07ef3d8ac0f2",
+    "semantic_hash": "564c9cca98075e94f36a07ef3d8ac0f2"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+    "mtime": 1788877498.2921233,
+    "seen": 1788905148.3187597,
+    "ast_hash": "8479efdf06e2d26e053d27ffa6964185",
+    "semantic_hash": "8479efdf06e2d26e053d27ffa6964185"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/ApiEndpoints.json": {
+    "mtime": 1788904510.9700243,
+    "seen": 1788905148.318762,
+    "ast_hash": "4c1d7bcbbcb638146c792edc8f78999a",
+    "semantic_hash": "4c1d7bcbbcb638146c792edc8f78999a"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/EndpointInfo/TiendaServicio.Api.Autor.json": {
+    "mtime": 1788904511.2066352,
+    "seen": 1788905148.318764,
+    "ast_hash": "131da804371cf798ed3e0cf060fcf4ec",
+    "semantic_hash": "131da804371cf798ed3e0cf060fcf4ec"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.AssemblyInfo.cs": {
+    "mtime": 1788877498.428996,
+    "seen": 1788905148.318766,
+    "ast_hash": "88238a010d6973acfa88f5cfcdde39fe",
+    "semantic_hash": "88238a010d6973acfa88f5cfcdde39fe"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.GlobalUsings.g.cs": {
+    "mtime": 1788877497.9398677,
+    "seen": 1788905148.3187678,
+    "ast_hash": "5b3fdaae7b59d230d7d136eab049a98a",
+    "semantic_hash": "5b3fdaae7b59d230d7d136eab049a98a"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/TiendaServicio.Api.Autor.MvcApplicationPartsAssemblyInfo.cs": {
+    "mtime": 1788904128.7925048,
+    "seen": 1788905148.3187697,
+    "ast_hash": "4ee678507a15c52a304cfe75f40f4acb",
+    "semantic_hash": "4ee678507a15c52a304cfe75f40f4acb"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json": {
+    "mtime": 1788904170.0226326,
+    "seen": 1788905148.3187711,
+    "ast_hash": "515798bdb147d504401630da655d2cb0",
+    "semantic_hash": "515798bdb147d504401630da655d2cb0"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/rjsmrazor.dswa.cache.json": {
+    "mtime": 1788904170.005634,
+    "seen": 1788905148.3187728,
+    "ast_hash": "ce5ac1e60480ad62304b5ed232f50f2e",
+    "semantic_hash": "ce5ac1e60480ad62304b5ed232f50f2e"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/rpswa.dswa.cache.json": {
+    "mtime": 1788886282.383325,
+    "seen": 1788905148.3187742,
+    "ast_hash": "d1f7bb99aef0ab093f059a5561e4056a",
+    "semantic_hash": "d1f7bb99aef0ab093f059a5561e4056a"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/staticwebassets.build.endpoints.json": {
+    "mtime": 1788886401.5571494,
+    "seen": 1788905148.3187761,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "TiendaServicio.Api.Autor/obj/Debug/net10.0/staticwebassets.build.json": {
+    "mtime": 1788886401.4669394,
+    "seen": 1788905148.3187776,
+    "ast_hash": "384814767bb8770e5d20f160cc4f89db",
+    "semantic_hash": "384814767bb8770e5d20f160cc4f89db"
+  },
+  "TiendaServicio.Api.Autor/obj/TiendaServicio.Api.Autor.csproj.nuget.dgspec.json": {
+    "mtime": 1788897473.0158525,
+    "seen": 1788905148.3187797,
+    "ast_hash": "4c3c21bad61ca871628cc5a23487bea4",
+    "semantic_hash": "4c3c21bad61ca871628cc5a23487bea4"
+  },
+  "TiendaServicio.Api.Autor/obj/project.assets.json": {
+    "mtime": 1788897472.8574703,
+    "seen": 1788905148.3187814,
+    "ast_hash": "e3356631ba12301e131a166ef9c08864",
+    "semantic_hash": "e3356631ba12301e131a166ef9c08864"
+  },
+  "TiendaServicios.slnx": {
+    "mtime": 1788886391.3191829,
+    "seen": 1788905148.318783,
+    "ast_hash": "cc80ae2ed3adaceca005b02f0e7bdcee",
+    "semantic_hash": "cc80ae2ed3adaceca005b02f0e7bdcee"
+  }
+}
