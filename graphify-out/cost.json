@@ -32,6 +32,13 @@
       "output_tokens": 0,
       "files": 37,
       "note": "added TiendaServicios.Api.Libro (Consulta/DTO/MappingProfile/LibroController); DI overlay for both Program.cs"
+    },
+    {
+      "date": "2026-09-09T22:14:47.577502+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 37,
+      "note": "swagger launchUrl + title fixes; re-extract"
     }
   ],
   "total_input_tokens": 0,
