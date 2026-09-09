@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TiendaServicio.Api.Autor.Aplicacion;
+using TiendaServicio.Api.Autor.Modelo;
 
 namespace TiendaServicio.Api.Autor.Controllers
 {
@@ -16,9 +17,26 @@ namespace TiendaServicio.Api.Autor.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Unit>> Crear(Nuevo.Ejecuta data)
+        public async Task<IActionResult> Crear(Nuevo.Ejecuta data)
         {
-            return await _mediator.Send(data);
+            await _mediator.Send(data);
+            return NoContent();
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<AutorDto>>> GetAutores()
+        {
+            var request = new Consulta.ListaAutor();
+            var autores = await _mediator.Send(request);
+            return autores;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<AutorDto>> GetAutorLibro(string id)
+        {
+            var request = new ConsultaFiltro.AutorUnico { AutorGuid = id };
+            var autor = await _mediator.Send(request);
+            return autor;
         }
     }
 }

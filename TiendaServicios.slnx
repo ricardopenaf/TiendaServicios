@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj" />
+  <Project Path="TiendaServicios.Api.Libro/TiendaServicios.Api.Libro.csproj" Id="e3e1fe18-23be-45c6-a6f6-654428b2c11b" />
 </Solution>

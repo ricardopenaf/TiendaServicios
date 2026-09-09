@@ -1,9 +1,10 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
-using TiendaServicio.Api.Autor.Aplicacion;
-using TiendaServicio.Api.Autor.Persistencia;
+using TiendaServicios.Api.Libro.Aplicacion;
+using TiendaServicios.Api.Libro.Persistencia;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<Nuevo>();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+//builder.Services.AddOpenApi();
 
-// Swagger / OpenAPI
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -25,14 +26,13 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-builder.Services.AddDbContext<ContextoAutor>(options =>
+builder.Services.AddDbContext<ContextoLibreria>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("ConexionDatabase"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDatabase"));
 });
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Nuevo.Manejador).Assembly));
-// Registrar AutoMapper (escanea los perfiles en el assembly de Aplicacion)
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Consulta).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Nuevo).Assembly));
 
 var app = builder.Build();
 
@@ -42,7 +42,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TiendaServicios.Api.Libro v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TiendaServicio.Api.Libro v1");
     });
 }
 

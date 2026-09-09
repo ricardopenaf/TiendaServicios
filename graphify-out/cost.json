@@ -12,6 +12,26 @@
       "output_tokens": 0,
       "files": 39,
       "note": "deep mode - semantic pass over C# source"
+    },
+    {
+      "date": "2026-09-09T17:07:03.631557+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 20
+    },
+    {
+      "date": "2026-09-09T18:44:20.474301+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 20,
+      "note": "re-extract after FluentValidation+MediatR12 migration; DI overlay re-applied"
+    },
+    {
+      "date": "2026-09-09T22:00:18.424940+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 37,
+      "note": "added TiendaServicios.Api.Libro (Consulta/DTO/MappingProfile/LibroController); DI overlay for both Program.cs"
     }
   ],
   "total_input_tokens": 0,

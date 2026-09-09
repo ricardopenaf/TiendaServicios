@@ -1,0 +1,256 @@
+{
+  "edges": [
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_persistencia_contextoautor_tiendaservicio_api_autor_persistencia_contextoautor",
+      "relation": "registers",
+      "confidence": "EXTRACTED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "builder.Services.AddDbContext<ContextoAutor>(o => o.UseNpgsql(...))"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_controllers_autorcontroller_cs_imediator",
+      "relation": "registers",
+      "confidence": "EXTRACTED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR(cfg => cfg.RegisterServicesFromAssembly(...)) wires the IMediator the controller injects"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_mappingprofile_tiendaservicio_api_autor_aplicacion_mappingprofile",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddAutoMapper(cfg => cfg.AddMaps(assembly)) scan registers MappingProfile : Profile"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_ejecutavalidacion",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddValidatorsFromAssemblyContaining<Nuevo>() registers EjecutaValidacion"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR RegisterServicesFromAssembly registers Nuevo.Manejador (IRequestHandler<Ejecuta>)"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_cs_imediator",
+      "target": "tiendaservicio_api_autor_aplicacion_nuevo_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "dispatches_to",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "IMediator.Send(...) resolves to Nuevo.Manejador (IRequestHandler<Ejecuta>) at runtime"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_consulta_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR RegisterServicesFromAssembly registers Consulta.Manejador (IRequestHandler<ListaAutor,List<AutorDto>>)"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_cs_imediator",
+      "target": "tiendaservicio_api_autor_aplicacion_consulta_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "dispatches_to",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "IMediator.Send(...) resolves to Consulta.Manejador (IRequestHandler<ListaAutor,List<AutorDto>>) at runtime"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_program",
+      "target": "tiendaservicio_api_autor_aplicacion_consultafiltro_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR RegisterServicesFromAssembly registers ConsultaFiltro.Manejador (IRequestHandler<AutorUnico,AutorLibro>)"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicio_api_autor_controllers_autorcontroller_cs_imediator",
+      "target": "tiendaservicio_api_autor_aplicacion_consultafiltro_tiendaservicio_api_autor_aplicacion_manejador",
+      "relation": "dispatches_to",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicio.Api.Autor/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "IMediator.Send(...) resolves to ConsultaFiltro.Manejador (IRequestHandler<AutorUnico,AutorLibro>) at runtime"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_persistencia_contextolibreria_tiendaservicios_api_libro_persistencia_contextolibreria",
+      "relation": "registers",
+      "confidence": "EXTRACTED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "builder.Services.AddDbContext<ContextoLibreria>(o => o.UseSqlServer(...))"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_controllers_librocontroller_cs_imediator",
+      "relation": "registers",
+      "confidence": "EXTRACTED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR(cfg => cfg.RegisterServicesFromAssembly(...)) wires the IMediator the controller injects"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_aplicacion_mappingprofile_tiendaservicios_api_libro_aplicacion_mappingprofile",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddAutoMapper(cfg => cfg.AddMaps(assembly)) scan registers MappingProfile : Profile"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_aplicacion_nuevo_tiendaservicios_api_libro_aplicacion_ejecutavalidacion",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddValidatorsFromAssemblyContaining<Nuevo>() registers EjecutaValidacion"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_aplicacion_nuevo_tiendaservicios_api_libro_aplicacion_manejador",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR RegisterServicesFromAssembly registers Nuevo.Manejador (IRequestHandler<Ejecuta>)"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_controllers_librocontroller_cs_imediator",
+      "target": "tiendaservicios_api_libro_aplicacion_nuevo_tiendaservicios_api_libro_aplicacion_manejador",
+      "relation": "dispatches_to",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "IMediator.Send(...) resolves to Nuevo.Manejador (IRequestHandler<Ejecuta>) at runtime"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_program",
+      "target": "tiendaservicios_api_libro_aplicacion_consulta_tiendaservicios_api_libro_aplicacion_manejador",
+      "relation": "registers",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "AddMediatR RegisterServicesFromAssembly registers Consulta.Manejador (IRequestHandler<ListaLibro,List<LibroMaterialDto>>)"
+      },
+      "_origin": "manual-di"
+    },
+    {
+      "source": "tiendaservicios_api_libro_controllers_librocontroller_cs_imediator",
+      "target": "tiendaservicios_api_libro_aplicacion_consulta_tiendaservicios_api_libro_aplicacion_manejador",
+      "relation": "dispatches_to",
+      "confidence": "INFERRED",
+      "source_file": "TiendaServicios.Api.Libro/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "di_registration",
+      "metadata": {
+        "note": "IMediator.Send(...) resolves to Consulta.Manejador (IRequestHandler<ListaLibro,List<LibroMaterialDto>>) at runtime"
+      },
+      "_origin": "manual-di"
+    }
+  ]
+}
