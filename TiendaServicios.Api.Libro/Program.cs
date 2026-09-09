@@ -20,7 +20,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "TiendaServicio.Api.Libro",
+        Title = "TiendaServicios.Api.Libro",
         Version = "v1",
         Description = "API del microservicio de libros"
     });
@@ -42,7 +42,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TiendaServicio.Api.Libro v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TiendaServicios.Api.Libro v1");
     });
 }
 
