@@ -3,6 +3,8 @@ using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
+using TiendaServicios.Api.CarritoCompra.Aplicacion;
+using TiendaServicios.Api.CarritoCompra.Persistencia;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
-//builder.Services.AddValidatorsFromAssemblyContaining<Nuevo>();
+builder.Services.AddValidatorsFromAssemblyContaining<Nuevo>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 //builder.Services.AddOpenApi();
 
@@ -25,13 +27,18 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-//builder.Services.AddDbContext<ContextoLibreria>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDatabase"));
-//});
+builder.Services.AddDbContext<CarritoContexto>(options =>
+{
+    options.UseMySQL(builder.Configuration.GetConnectionString("ConexionDatabase"));
+});
 
-//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Nuevo.Manejador).Assembly));
-//builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Nuevo).Assembly));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Nuevo.Manejador).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Nuevo).Assembly));
+
+builder.Services.AddHttpClient("Libros", config =>
+{
+    config.BaseAddress = new Uri(builder.Configuration["Services:Libros"]);
+});
 
 var app = builder.Build();
 
