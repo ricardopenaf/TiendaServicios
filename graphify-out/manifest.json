@@ -90,10 +90,10 @@
     "semantic_hash": "564c9cca98075e94f36a07ef3d8ac0f2"
   },
   "TiendaServicios.slnx": {
-    "mtime": 1789156819.8238356,
-    "seen": 1789403314.696475,
-    "ast_hash": "f9332200bc216ad32d3bd3cacf9e7f08",
-    "semantic_hash": "f9332200bc216ad32d3bd3cacf9e7f08"
+    "mtime": 1789488901.6761742,
+    "seen": 1789497019.4339685,
+    "ast_hash": "ebf3a1d1ca5b4f7dfdd22c877c163f51",
+    "semantic_hash": "ebf3a1d1ca5b4f7dfdd22c877c163f51"
   },
   "TiendaServicio.Api.Autor/Aplicacion/AutorDto.cs": {
     "mtime": 1788971272.7166407,
@@ -120,10 +120,10 @@
     "semantic_hash": "fa1f25bbc697aed1fe25340d80497c80"
   },
   "TiendaServicios.Api.Libro/Aplicacion/Consulta.cs": {
-    "mtime": 1789069536.255276,
-    "seen": 1789403314.69644,
-    "ast_hash": "2859301bce1229632e6aeb7b4772923b",
-    "semantic_hash": "2859301bce1229632e6aeb7b4772923b"
+    "mtime": 1789488901.5287476,
+    "seen": 1789497019.433902,
+    "ast_hash": "1eed27d4e8240852de7243c32ff7b4c7",
+    "semantic_hash": "1eed27d4e8240852de7243c32ff7b4c7"
   },
   "TiendaServicios.Api.Libro/Aplicacion/LibroMaterialDto.cs": {
     "mtime": 1788991022.97106,
@@ -210,16 +210,16 @@
     "semantic_hash": "7de86155149cc7fbfcd5a918c7f3287f"
   },
   "TiendaServicios.Api.CarritoCompra/Aplicacion/Nuevo.cs": {
-    "mtime": 1789399774.0168085,
-    "seen": 1789403314.6964073,
-    "ast_hash": "6e68d6d6f65ea97ecadf0fe2ff66c513",
-    "semantic_hash": "6e68d6d6f65ea97ecadf0fe2ff66c513"
+    "mtime": 1789403476.394126,
+    "seen": 1789497019.4338253,
+    "ast_hash": "1d4a23395134a3dd719df0bb05e18847",
+    "semantic_hash": "1d4a23395134a3dd719df0bb05e18847"
   },
   "TiendaServicios.Api.CarritoCompra/Controllers/CarritoComprasController.cs": {
-    "mtime": 1789402669.7550733,
-    "seen": 1789403314.6964107,
-    "ast_hash": "350430d3c3bc9b86bec474958c4a8ef1",
-    "semantic_hash": "350430d3c3bc9b86bec474958c4a8ef1"
+    "mtime": 1789485251.0435674,
+    "seen": 1789497019.4338288,
+    "ast_hash": "a3043e278edbd29306ae8fcca2873575",
+    "semantic_hash": "a3043e278edbd29306ae8fcca2873575"
   },
   "TiendaServicios.Api.CarritoCompra/Controllers/WeatherForecastController.cs": {
     "mtime": 1789156268.5577126,
@@ -264,10 +264,10 @@
     "semantic_hash": "37376625cd3cf0d14d97b26da8dd32b8"
   },
   "TiendaServicios.Api.CarritoCompra/Program.cs": {
-    "mtime": 1789402980.6521344,
-    "seen": 1789403314.6964285,
-    "ast_hash": "358b24fa74a834cb487edc06d009a937",
-    "semantic_hash": "358b24fa74a834cb487edc06d009a937"
+    "mtime": 1789485123.8499818,
+    "seen": 1789497019.4338605,
+    "ast_hash": "80667be6b1223df4ff806d840d161c4a",
+    "semantic_hash": "80667be6b1223df4ff806d840d161c4a"
   },
   "TiendaServicios.Api.CarritoCompra/Properties/launchSettings.json": {
     "mtime": 1789402955.2808735,
@@ -276,8 +276,8 @@
     "semantic_hash": "f71d54a26fc9fb7d6eb9bf7332ce13cd"
   },
   "TiendaServicios.Api.CarritoCompra/TiendaServicios.Api.CarritoCompra.csproj": {
-    "mtime": 1789402981.0552087,
-    "seen": 1789403314.696432,
+    "mtime": 1789411681.4905932,
+    "seen": 1789497019.433878,
     "ast_hash": "5f33e6952b96e40450afe90deb410606",
     "semantic_hash": "5f33e6952b96e40450afe90deb410606"
   },
@@ -294,15 +294,63 @@
     "semantic_hash": "804b473502a4c415cf75db61c56c32aa"
   },
   "TiendaServicios.Api.CarritoCompra/appsettings.json": {
-    "mtime": 1789395967.751123,
-    "seen": 1789403314.696438,
-    "ast_hash": "fd73ec60e84946ebe79fd5b8f40a4d96",
-    "semantic_hash": "fd73ec60e84946ebe79fd5b8f40a4d96"
+    "mtime": 1789410498.320398,
+    "seen": 1789497019.433892,
+    "ast_hash": "3c8df7453d4d3ace2dc8c8ee52b5e93a",
+    "semantic_hash": "3c8df7453d4d3ace2dc8c8ee52b5e93a"
   },
   "TiendaServicios.Api.Libro/Aplicacion/ConsultaFiltro.cs": {
     "mtime": 1789069799.209647,
     "seen": 1789403314.696442,
     "ast_hash": "20e9a9f9d379bdc68be0c9335f5603ee",
     "semantic_hash": "20e9a9f9d379bdc68be0c9335f5603ee"
+  },
+  "TiendaServicios.Api.CarritoCompra/Aplicacion/CarritoDetalletDto.cs": {
+    "mtime": 1789410197.7001426,
+    "seen": 1789497019.4338124,
+    "ast_hash": "604df754a6ec07a7b54ea92bb329bb53",
+    "semantic_hash": "604df754a6ec07a7b54ea92bb329bb53"
+  },
+  "TiendaServicios.Api.CarritoCompra/Aplicacion/CarritoDto.cs": {
+    "mtime": 1789410277.3899698,
+    "seen": 1789497019.433818,
+    "ast_hash": "d1a93851a854eea7cdd1b855be4cdfce",
+    "semantic_hash": "d1a93851a854eea7cdd1b855be4cdfce"
+  },
+  "TiendaServicios.Api.CarritoCompra/Aplicacion/Consulta.cs": {
+    "mtime": 1789417318.3026576,
+    "seen": 1789497019.4338212,
+    "ast_hash": "4b32aae1c407f48c2fe4515ef17875c0",
+    "semantic_hash": "4b32aae1c407f48c2fe4515ef17875c0"
+  },
+  "TiendaServicios.Api.CarritoCompra/RemoteInterface/ILibroService.cs": {
+    "mtime": 1789411035.9566798,
+    "seen": 1789497019.433867,
+    "ast_hash": "a84a4925629a8ec41390947ead6eb297",
+    "semantic_hash": "a84a4925629a8ec41390947ead6eb297"
+  },
+  "TiendaServicios.Api.CarritoCompra/RemoteModel/LibroRemote.cs": {
+    "mtime": 1789410854.2369132,
+    "seen": 1789497019.4338696,
+    "ast_hash": "2cf2dd73ae0fed0251e980acf35c8fcc",
+    "semantic_hash": "2cf2dd73ae0fed0251e980acf35c8fcc"
+  },
+  "TiendaServicios.Api.CarritoCompra/RemoteService/LibrosService.cs": {
+    "mtime": 1789485839.9456398,
+    "seen": 1789497019.4338746,
+    "ast_hash": "b0b534ad3fa8e5d3162c52f0dcad75b8",
+    "semantic_hash": "b0b534ad3fa8e5d3162c52f0dcad75b8"
+  },
+  "TiendaServicios.Api.Libro.Test/LibrosServicesTest.cs": {
+    "mtime": 1789495975.9509463,
+    "seen": 1789497019.4338956,
+    "ast_hash": "ffdb62b384baef3346f0577556ff7cb5",
+    "semantic_hash": "ffdb62b384baef3346f0577556ff7cb5"
+  },
+  "TiendaServicios.Api.Libro.Test/TiendaServicios.Api.Libro.Test.csproj": {
+    "mtime": 1789490065.9284332,
+    "seen": 1789497019.4338984,
+    "ast_hash": "e592addc290d0eee0dd3635774c688ed",
+    "semantic_hash": "e592addc290d0eee0dd3635774c688ed"
   }
 }

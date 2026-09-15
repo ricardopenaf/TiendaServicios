@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="TiendaServicio.Api.Autor/TiendaServicio.Api.Autor.csproj" />
   <Project Path="TiendaServicios.Api.CarritoCompra/TiendaServicios.Api.CarritoCompra.csproj" Id="2179c6d2-caf6-4dfb-abba-5d7fab1412f3" />
+  <Project Path="TiendaServicios.Api.Libro.Test/TiendaServicios.Api.Libro.Test.csproj" Id="e9c7803d-bd3a-4d43-b5e6-b60c34f446ce" />
   <Project Path="TiendaServicios.Api.Libro/TiendaServicios.Api.Libro.csproj" Id="e3e1fe18-23be-45c6-a6f6-654428b2c11b" />
 </Solution>
