@@ -26,6 +26,7 @@ namespace TiendaServicios.Api.Libro.Test
         [Fact]
         public async Task GetLibros()
         {
+            System.Diagnostics.Debugger.Launch();
             // Que metodo dentro de mi microservice libro se esta encargando de realizar
             // la consulta de libros de la bf? (GET api/Libro/{id})
             //1. instancia de Entity Framework Core - ContextoLibreria respaldada por
