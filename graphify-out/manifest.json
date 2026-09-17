@@ -174,10 +174,10 @@
     "semantic_hash": "f2598aa8976c93b6d3bfde92d8a367d5"
   },
   "TiendaServicios.Api.Libro/Persistencia/ContextoLibreria.cs": {
-    "mtime": 1788981867.8433526,
-    "seen": 1788991218.357254,
-    "ast_hash": "58f7e4451bcb36fae52597fc538ceb9e",
-    "semantic_hash": "58f7e4451bcb36fae52597fc538ceb9e"
+    "mtime": 1789575100.4292493,
+    "seen": 1789658824.9673352,
+    "ast_hash": "6f9ce62285ac34bbe579fd66325f39de",
+    "semantic_hash": "6f9ce62285ac34bbe579fd66325f39de"
   },
   "TiendaServicios.Api.Libro/Program.cs": {
     "mtime": 1789051101.7269592,
@@ -342,15 +342,27 @@
     "semantic_hash": "b0b534ad3fa8e5d3162c52f0dcad75b8"
   },
   "TiendaServicios.Api.Libro.Test/LibrosServicesTest.cs": {
-    "mtime": 1789495975.9509463,
-    "seen": 1789497019.4338956,
-    "ast_hash": "ffdb62b384baef3346f0577556ff7cb5",
-    "semantic_hash": "ffdb62b384baef3346f0577556ff7cb5"
+    "mtime": 1789658599.0099165,
+    "seen": 1789658824.9673042,
+    "ast_hash": "b92470a0d766d7aba7326f20d51645ab",
+    "semantic_hash": "b92470a0d766d7aba7326f20d51645ab"
   },
   "TiendaServicios.Api.Libro.Test/TiendaServicios.Api.Libro.Test.csproj": {
-    "mtime": 1789490065.9284332,
-    "seen": 1789497019.4338984,
-    "ast_hash": "e592addc290d0eee0dd3635774c688ed",
-    "semantic_hash": "e592addc290d0eee0dd3635774c688ed"
+    "mtime": 1789497363.3597627,
+    "seen": 1789658824.9673078,
+    "ast_hash": "666c74e077fd31d609d7207532289f35",
+    "semantic_hash": "666c74e077fd31d609d7207532289f35"
+  },
+  "TiendaServicios.Api.Libro.Test/AsyncQueryProvider.cs": {
+    "mtime": 1789588675.6849012,
+    "seen": 1789658824.9673011,
+    "ast_hash": "87c7662f6a717029161738f8d2bd6ba9",
+    "semantic_hash": "87c7662f6a717029161738f8d2bd6ba9"
+  },
+  "TiendaServicios.Api.Libro.Test/TestAsyncEnumerable.cs": {
+    "mtime": 1789587254.4173381,
+    "seen": 1789658824.967306,
+    "ast_hash": "16fe254ba3341c2e1fc7b0f1029c5f43",
+    "semantic_hash": "16fe254ba3341c2e1fc7b0f1029c5f43"
   }
 }
