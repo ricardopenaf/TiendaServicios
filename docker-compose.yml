@@ -1,0 +1,42 @@
+version: "3.9"
+
+# ──────────────────────────────────────────────────────────────────
+# FunEvents — Entorno de desarrollo local (alternativa a Aspire)
+# Uso: docker compose up -d
+# ──────────────────────────────────────────────────────────────────
+
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: funevents-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       funevents
+      POSTGRES_USER:     funevents
+      POSTGRES_PASSWORD: funevents123
+    ports:
+      - "5432:5432"
+    volumes:
+      - funevents-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U funevents"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: funevents-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL:    admin@funevents.co
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  funevents-pgdata:

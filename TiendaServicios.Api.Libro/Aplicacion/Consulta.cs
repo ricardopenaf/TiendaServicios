@@ -11,7 +11,9 @@ namespace TiendaServicios.Api.Libro.Aplicacion
         public class ListaLibro : IRequest<List<LibroMaterialDto>>
         {
         }
-
+        /// <summary>
+        /// Manejador de la consulta para obtener la lista de libros.
+        /// </summary>
         public class Manejador : IRequestHandler<ListaLibro, List<LibroMaterialDto>>
         {
             private readonly ContextoLibreria _contexto;
