@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Certificados TLS locales de PostgreSQL (claves privadas)
+certs/*.key
+certs/*.csr
+certs/*.srl

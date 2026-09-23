@@ -7,6 +7,19 @@ version: "3.9"
 
 services:
 
+  certs-init:
+    image: alpine:3.20
+    container_name: funevents-certs-init
+    volumes:
+      - ./certs:/certs-src:ro
+      - funevents-pgcerts:/certs-dest
+    command: >
+      sh -c "cp /certs-src/server.crt /certs-src/server.key /certs-src/ca.crt /certs-dest/ &&
+             chown 70:70 /certs-dest/server.key &&
+             chmod 600 /certs-dest/server.key &&
+             chmod 644 /certs-dest/server.crt /certs-dest/ca.crt"
+    restart: "no"
+
   postgres:
     image: postgres:16-alpine
     container_name: funevents-postgres
@@ -19,11 +32,26 @@ services:
       - "5432:5432"
     volumes:
       - funevents-pgdata:/var/lib/postgresql/data
+      - funevents-pgcerts:/certs:ro
+      - ./certs/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+    command: >
+      -c ssl=on
+      -c ssl_cert_file=/certs/server.crt
+      -c ssl_key_file=/certs/server.key
+      -c ssl_ca_file=/certs/ca.crt
+    depends_on:
+      certs-init:
+        condition: service_completed_successfully
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U funevents"]
       interval: 5s
       timeout: 3s
       retries: 10
+    networks:
+      default:
+      pgadmin-net:
+        aliases:
+          - postgres
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -40,3 +68,14 @@ services:
 
 volumes:
   funevents-pgdata:
+    external: true
+    name: funevents_funevents-pgdata
+  funevents-pgcerts:
+
+networks:
+  default:
+  # Red del pgAdmin ya existente (proyecto "funevents"), para que
+  # pueda seguir resolviendo el hostname "postgres" tras recrear el contenedor.
+  pgadmin-net:
+    name: funevents_default
+    external: true
