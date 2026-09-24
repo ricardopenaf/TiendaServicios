@@ -7,6 +7,8 @@ using TiendaServicio.Api.Autor.Persistencia;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -35,6 +37,8 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Nuevo
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Consulta).Assembly));
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <ProjectGuid>81dded9d-158b-e303-5f62-77a2896d2a5a</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
+    <DockerServiceName>tiendaservicio.api.autor</DockerServiceName>
+    <!-- Fija el nombre de proyecto de Docker Compose para que coincida con el que usa
+         "docker compose" desde la terminal (por defecto, el nombre de la carpeta en minúsculas).
+         Evita que Visual Studio cree una copia duplicada del stack (con su propio hash de proyecto)
+         que choca en los puertos 5432/5050 con los contenedores ya levantados manualmente. -->
+    <DockerComposeProjectName>tiendaservicios</DockerComposeProjectName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+    <None Include="docker-compose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>

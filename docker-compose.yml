@@ -9,7 +9,6 @@ services:
 
   certs-init:
     image: alpine:3.20
-    container_name: funevents-certs-init
     volumes:
       - ./certs:/certs-src:ro
       - funevents-pgcerts:/certs-dest
@@ -22,7 +21,6 @@ services:
 
   postgres:
     image: postgres:16-alpine
-    container_name: funevents-postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB:       funevents
@@ -55,13 +53,21 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: funevents-pgadmin
     restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL:    admin@funevents.co
       PGADMIN_DEFAULT_PASSWORD: admin123
     ports:
       - "5050:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  tiendaservicio.api.autor:
+    image: ${DOCKER_REGISTRY-}tiendaservicioapiautor
+    build:
+      context: .
+      dockerfile: TiendaServicio.Api.Autor/Dockerfile
     depends_on:
       postgres:
         condition: service_healthy

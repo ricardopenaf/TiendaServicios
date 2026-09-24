@@ -1,0 +1,10 @@
+services:
+  tiendaservicio.api.autor:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      # Dentro de la red de compose el host de postgres es el nombre del servicio,
+      # no "localhost" (que dentro del contenedor apunta al propio contenedor de la API).
+      - ConnectionStrings__ConexionDatabase=Server=postgres;Port=5432;Database=TiendaAutor;User Id=funevents;Password=funevents123;
+    ports:
+      - "8080"
