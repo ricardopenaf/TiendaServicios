@@ -7,4 +7,26 @@ services:
       # no "localhost" (que dentro del contenedor apunta al propio contenedor de la API).
       - ConnectionStrings__ConexionDatabase=Server=postgres;Port=5432;Database=TiendaAutor;User Id=funevents;Password=funevents123;
     ports:
-      - "8080"
+      - "5101:8080"
+
+  tiendaservicios.api.libro:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      # Dentro de la red de compose el host de SQL Server es el nombre del servicio,
+      # no "localhost" (que dentro del contenedor apunta al propio contenedor de la API).
+      - ConnectionStrings__ConexionDatabase=Server=sqlserver,1433;Initial Catalog=tiendalibro;User Id=sa;Password=Sql2026Server!;Integrated Security=false;TrustServerCertificate=true;
+    ports:
+      - "5102:8080"
+
+  tiendaservicios.api.carritocompra:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      # Dentro de la red de compose el host de MySQL es el nombre del servicio,
+      # no "localhost" (que dentro del contenedor apunta al propio contenedor de la API).
+      - ConnectionStrings__ConexionDatabase=Server=mysql;port=3306;database=carritocompra;user=root;password=12345; old guids=true; default command timeout=800;
+      # Idem para el microservicio de Libros al que este servicio llama por HTTP.
+      - Services__Libros=http://tiendaservicios.api.libro:8080
+    ports:
+      - "5103:8080"

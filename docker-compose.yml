@@ -72,11 +72,68 @@ services:
       postgres:
         condition: service_healthy
 
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Sql2026Server!
+    ports:
+      - "1433:1433"
+    volumes:
+      - tiendalibro-mssqldata:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -C -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  tiendaservicios.api.libro:
+    image: ${DOCKER_REGISTRY-}tiendaserviciosapilibro
+    build:
+      context: .
+      dockerfile: TiendaServicios.Api.Libro/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: carritocompra
+      MYSQL_ROOT_PASSWORD: "12345"
+    ports:
+      # 3306 del host está ocupado por un MySQL local; se expone en 3307
+      # para acceso externo (p.ej. un cliente de BD), el contenedor sigue
+      # escuchando en 3306 y se resuelve como "mysql:3306" en la red de compose.
+      - "3307:3306"
+    volumes:
+      - carritocompra-mysqldata:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -uroot -p$$MYSQL_ROOT_PASSWORD || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  tiendaservicios.api.carritocompra:
+    image: ${DOCKER_REGISTRY-}tiendaserviciosapicarritocompra
+    build:
+      context: .
+      dockerfile: TiendaServicios.Api.CarritoCompra/Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+      tiendaservicios.api.libro:
+        condition: service_started
+
 volumes:
   funevents-pgdata:
     external: true
     name: funevents_funevents-pgdata
   funevents-pgcerts:
+  tiendalibro-mssqldata:
+  carritocompra-mysqldata:
 
 networks:
   default:
