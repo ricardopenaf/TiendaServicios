@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TiendaServicio.Api.Autor\TiendaServicio.Api.Autor.csproj" />
+    <ProjectReference Include="..\TiendaServicios.Api.Gateway\TiendaServicios.Api.Gateway.csproj" />
   </ItemGroup>
 
 </Project>

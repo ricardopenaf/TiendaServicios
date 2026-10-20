@@ -30,3 +30,11 @@ services:
       - Services__Libros=http://tiendaservicios.api.libro:8080
     ports:
       - "5103:8080"
+
+  tiendaservicios.api.gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Services__Autor=http://tiendaservicio.api.autor:8080
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "5100:8080"

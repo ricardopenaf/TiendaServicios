@@ -127,6 +127,19 @@ services:
       tiendaservicios.api.libro:
         condition: service_started
 
+  tiendaservicios.api.gateway:
+    image: ${DOCKER_REGISTRY-}tiendaserviciosapigateway
+    build:
+      context: .
+      dockerfile: TiendaServicios.Api.Gateway/Dockerfile
+    depends_on:
+      tiendaservicio.api.autor:
+        condition: service_started
+      tiendaservicios.api.libro:
+        condition: service_started
+      tiendaservicios.api.carritocompra:
+        condition: service_started
+
 volumes:
   funevents-pgdata:
     external: true
