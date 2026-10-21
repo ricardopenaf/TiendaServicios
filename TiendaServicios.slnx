@@ -8,6 +8,7 @@
   <Project Path="TiendaServicios.Api.Libro.Test/TiendaServicios.Api.Libro.Test.csproj" Id="e9c7803d-bd3a-4d43-b5e6-b60c34f446ce" />
   <Project Path="TiendaServicios.Api.Libro/TiendaServicios.Api.Libro.csproj" Id="e3e1fe18-23be-45c6-a6f6-654428b2c11b" />
   <Project Path="TiendaServicios.AppHost/TiendaServicios.AppHost.csproj" />
+  <Project Path="TiendaServicios.RabbitMQ.Bus/TiendaServicios.RabbitMQ.Bus.csproj" Id="cb661582-8700-4ad7-9076-0e95672c865f" />
   <Project Path="TiendaServicios.ServiceDefaults/TiendaServicios.ServiceDefaults.csproj" />
   <Project Path="TiendaServicios1.ServiceDefaults/TiendaServicios1.ServiceDefaults.csproj" />
 </Solution>

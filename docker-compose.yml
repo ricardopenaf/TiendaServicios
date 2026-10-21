@@ -140,6 +140,23 @@ services:
       tiendaservicios.api.carritocompra:
         condition: service_started
 
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: tiendaservicios
+      RABBITMQ_DEFAULT_PASS: tiendaservicios123
+    ports:
+      - "5672:5672"   # AMQP
+      - "15672:15672" # Panel de administración (http://localhost:15672)
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
 volumes:
   funevents-pgdata:
     external: true
@@ -147,6 +164,7 @@ volumes:
   funevents-pgcerts:
   tiendalibro-mssqldata:
   carritocompra-mysqldata:
+  rabbitmq-data:
 
 networks:
   default:
